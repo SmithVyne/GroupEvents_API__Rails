@@ -1,7 +1,9 @@
-# README
+# GROUP EVENTS API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Getting Started
+- Endpoints
+- Request Formats (Dates)
+- Tests
 
 Things you may want to cover:
 
