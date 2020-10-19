@@ -24,7 +24,7 @@
 
 # How to create a new group event(POST):
   Required Fields:
-*  name 
+*  name
 *  description
 *  startDate  -  First day of the event. *
 *  endDate    -  Last day of the event. *
@@ -32,16 +32,18 @@
 *  published  -  true or false
 *  location   -  Where will the event happen (e.g. Toronto)
 
+<br>
+<br>
+
 * *ATTENTION: For startDate and endDate, send a POST request with the date formatted as 'YYYY MM dd'.
 * *Pay attention to the cases.
 * *NOTE: You can choose to omit one from startDate, endDate, or duration, and the app will figure it out.
+![post request example](/docs/sample_post_req.png)
 
 # How to request group events(GET)
 Send a GET request to `localhost:3000/group_events` to access all created events
-![get all group events](/docs/sample_get1.png)
 <br>
 Send a GET request to `localhost:3000/group_events/:id` with an event id to get a single event 
-![get all group events](/docs/sample_get.png)
 
 # How to Update an event (PATCH/PUT):
 Send a PATCH/PUT request to `localhost:3000/group_events/:id` 
