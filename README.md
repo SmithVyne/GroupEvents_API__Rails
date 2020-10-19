@@ -1,5 +1,5 @@
 # GROUP EVENTS API
-[View on Github](https://github.com/SmithVyne/GroupEvents_API__Rails/edit/main/README.md)
+[Readme on Github](https://github.com/SmithVyne/GroupEvents_API__Rails/edit/main/README.md)
 
 # My Instructions:
 ![project-instructions](/docs/proj-instruc.png)
