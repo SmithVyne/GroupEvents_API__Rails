@@ -1,4 +1,5 @@
 # GROUP EVENTS API
+[View on Github](https://github.com/SmithVyne/GroupEvents_API__Rails/edit/main/README.md)
 
 # My Instructions:
 ![project-instructions](/docs/proj-instruc.png)
@@ -73,3 +74,5 @@ I built my tests with RSpec and FactoryBot, run `rspec` in the terminal and chec
 - Email: [email me](mailto:smithnkereuwem2@gmail.com)
 
 ## Use and Share your feedback
+
+- Email: [email me](mailto:smithnkereuwem2@gmail.com)
