@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 describe 'Group Event API', type: :request do
+  let(:event) { FactoryBot.create(:group_event, name: 'Birthday', description: '18TH  Birthday', startDate: '2020 10 17', endDate: '2020 10 20', published: 'true', location: 'Asokoro') }
+  let(:anEvent) { GroupEvent.find(event.id)}
+
   describe 'GET /group_events' do
     it 'returns all group events with status 200' do
       2.times do
@@ -26,9 +29,6 @@ describe 'Group Event API', type: :request do
 
 
   describe 'DELETE /group_events/:id' do
-    let(:event) { FactoryBot.create(:group_event, name: 'Birthday', description: '18TH  Birthday', startDate: '2020 10 17', endDate: '2020 10 20', published: 'true', location: 'Asokoro') }
-    let(:anEvent) { GroupEvent.find(event.id)}
-
     it 'sends a successful request' do
       delete "/group_events/#{event.id}"
       expect(response).to have_http_status(:no_content)
@@ -47,9 +47,6 @@ describe 'Group Event API', type: :request do
   
 
   describe 'PATCH /group_events' do
-    let(:event) { FactoryBot.create(:group_event, name: 'Birthday', description: '18TH  Birthday', startDate: '2020 10 17', endDate: '2020 10 20', published: 'true', location: 'Asokoro') }
-    let(:anEvent) { GroupEvent.find(event.id)}
-
     it 'updates an event and returns status of success' do
       patch "/group_events/#{event.id}", params: {name: 'Patched Event', description: 'Patched test event', startDate: '2020 10 17', endDate: '2020 10 20', published: 'false', location: 'Berlin'}
       
